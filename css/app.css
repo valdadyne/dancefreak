@@ -1,0 +1,46 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+
+body{
+  padding: 0;margin: 0;
+  background: url("../img/title.jpg");
+  width:100%;
+}
+#header{
+  margin-top: 100px;
+  font-family: 'Oswald:400',serif;
+}
+.circle{
+   margin: 0;padding: 0;
+   width: 150px;
+   height: 150px;
+   background: red;
+   -moz-border-radius: 150px;
+   -webkit-border-radius: 150px;
+   border-radius: 150px;
+   position:absolute;top:100;
+   animation: mymove 5s  ease-in-out 1s infinite;}
+
+.bounce{
+  margin: 0;padding: 0;
+  width: 150px;
+  height: 150px;
+  background: yellow;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+  position:absolute;top:100;
+  animation: yourmove 10s  ease-in-out 1s infinite;}
+
+/* Keyframes */
+
+@keyframes mymove {
+    0% { background-color: yellow;top:200px;}
+    50% { background-color: orange;top:300px;}
+    100% { background-color: red;top:200px;}
+}
+
+@keyframes yourmove {
+  0% { background-color: red;top:200px;}
+  50% { background-color: blue;top:300px;}
+  100% { background-color: yellow;top:200px;}
+}
